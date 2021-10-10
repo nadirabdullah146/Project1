@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Project</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="AbdullahProject.css">
+
+</head>
+<body>
+
+	<div class="container">
+
+		<div class="sidebar">
+
+			<div>
+				<h1>Lorem Ipsum</h1>
+			</div>
+
+			<div class="sidebarIcon">
+
+				<div class="iconGroup" onclick="func()">
+					<div class="icon"></div>
+					<div class="icon"></div>
+					<div class="icon"></div>
+
+				</div>
+
+				<div class="sidebarMenu common">
+						<li><a href="#ttt" style="text-decoration: line-through red;">About</a></li>
+						<li><a href="#ttt">Services</a></li>
+						<li><a href="#ttt">Cuisine</a></li>
+						<li><a href="#ttt">Gallery</a></li>
+						<li><a href="#ttt">Contact</a></li>
+						<li><a href="#ttt">Book</a></li>
+						<div class="cartBtn">
+							<button>Cart</button>
+						</div>
+					</div>
+	
+				
+
+			</div>
+
+		</div>
+
+		<div class="maincontent">
+
+			<div class="statements">
+
+				<div class="heading">
+					<h1>What are you having for Lunch?</h1>
+				</div>
+	
+
+				<div class="cardContainer">
+
+					<div class="card">
+						<img class="cardImage" src="Mexican Taco.jpg" alt="Mexican Taco">
+						<p>Mexican Taco</p>
+					</div>
+
+					<div class="card">
+						<img class="cardImage" src="Farmhouse Pizza.jpg" alt="Farmhouse Pizza">
+						<p>Farmhouse Pizza</p>
+					</div>
+
+					<div class="card">
+						<img class="cardImage" src="Chicken Burger.jpg" alt="Chicken Burger">
+						<p>Chicken Burger</p>
+					</div>
+
+					<div class="card">
+						<img class="cardImage" src="Loaded Nachos.jpg" alt="Loaded Nachos">
+						<p>Loaded Nachos</p>
+					</div>
+
+					<div class="card">
+						<img class="cardImage" src="Hakka Noodles.jpg" alt="Hakka Noodles">
+						<p>Hakka Noodles</p>
+					</div>
+
+				</div>
+
+				<div class="description">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+					<hr class="hrline">
+				</div>
+
+			</div>
+			
+		</div>
+
+	</div>
+
+</body>
+
+<script>
+	
+	function func(){
+		let x = document.getElementsByClassName("common")[0];
+		if(x.style.display=="block"){
+			x.style.display = "none";
+		}
+		else{
+			x.style.display = "block";
+		}
+	}
+
+	setInterval(function(){
+		let x = document.getElementsByClassName("common")[0];
+		if(window.innerWidth>1000&&x.style.display=="none"){
+			x.style.display="block";
+		}
+	},0);
+
+</script>
+
+</html>
